@@ -5,6 +5,7 @@ import Hero from "./components/home/Hero";
 import Statistics from "./components/home/Statistics";
 import Categories from "./components/shared/Categories";
 import Features from "./components/shared/Features";
+import Testimonials from "./components/shared/Testimonials";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <Features />
 
       {/* 5. Testimonials Section */}
-      
+      <Testimonials />
 
       {/* 6. Newsletter Section */}
       
