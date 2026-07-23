@@ -6,6 +6,7 @@ import Statistics from "./components/home/Statistics";
 import Categories from "./components/shared/Categories";
 import Features from "./components/shared/Features";
 import Testimonials from "./components/shared/Testimonials";
+import Newsletter from "./components/shared/Newsletter";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
       <Testimonials />
 
       {/* 6. Newsletter Section */}
-      
+      <Newsletter />
 
       {/* 7. FAQ Section */}
       
