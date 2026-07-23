@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #020617; /* ডার্ক ব্যাকগ্রাউন্ড ফিক্সড করা হলো */
+  color: #f1f5f9;
   font-family: Arial, Helvetica, sans-serif;
 }
