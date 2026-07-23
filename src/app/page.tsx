@@ -7,6 +7,7 @@ import Categories from "./components/shared/Categories";
 import Features from "./components/shared/Features";
 import Testimonials from "./components/shared/Testimonials";
 import Newsletter from "./components/shared/Newsletter";
+import FAQ from "./components/shared/FAQ";
 
 export default function Home() {
   return (
@@ -33,8 +34,7 @@ export default function Home() {
       <Newsletter />
 
       {/* 7. FAQ Section */}
-      
-
+      <FAQ />
     </div>
   );
 }
