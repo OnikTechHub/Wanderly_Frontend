@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CheckCircle2, Star, MapPin } from "lucide-react";
 import Hero from "./components/home/Hero";
 import Statistics from "./components/home/Statistics";
+import Categories from "./components/shared/Categories";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Statistics />
 
       {/* 3. Featured Categories Section */}
-      
+
+      <Categories />      
 
       {/* 4. Why Choose Us / Features Section */}
       
