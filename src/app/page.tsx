@@ -4,6 +4,7 @@ import { CheckCircle2, Star, MapPin } from "lucide-react";
 import Hero from "./components/home/Hero";
 import Statistics from "./components/home/Statistics";
 import Categories from "./components/shared/Categories";
+import Features from "./components/shared/Features";
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
 
       <Categories />      
 
-      {/* 4. Why Choose Us / Features Section */}
+      {/* 4.Features Section */}
       
+      <Features />
 
       {/* 5. Testimonials Section */}
       
