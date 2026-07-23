@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { Compass, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -7,19 +10,39 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-wanderlyPrimary/20 via-slate-950 to-slate-950 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-wanderlyPrimary text-sm font-medium shadow-inner">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-wanderlyPrimary text-sm font-medium shadow-inner"
+        >
           <Compass className="w-4 h-4 animate-spin" /> Explore the Unseen World with Wanderly
-        </div>
+        </motion.div>
         
-        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight"
+        >
           Discover Your Next Great <span className="bg-gradient-to-r from-wanderlyPrimary to-cyan-400 bg-clip-text text-transparent">Adventure</span>
-        </h1>
+        </motion.h1>
         
-        <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto"
+        >
           Plan, book, and manage your dream tours seamlessly with our comprehensive travel platform designed for modern explorers.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+        >
           <Link
             href="/explore"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-wanderlyPrimary to-cyan-500 text-slate-950 font-bold px-8 py-4 rounded-2xl shadow-xl shadow-wanderlyPrimary/20 hover:opacity-95 transition transform hover:-translate-y-0.5"
@@ -32,7 +55,7 @@ export default function Hero() {
           >
             Learn More
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
